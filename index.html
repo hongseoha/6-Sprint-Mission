@@ -6,17 +6,26 @@
 
     <meta name="keyword" content="market, flee-market, panda" />
     <meta name="discription" content="Panda market webpage" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1540126034813-121bf29033d2?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+    <meta property="og:title" content="판다마켓"/>
+    <meta property="og:url" content="https://www.pandamarket.com"/>
+    <meta property="og:description" content="일상의 모든 물건을 거래해보세요."/>
+
+
 
     <title>판다마켓</title>
+    
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_tablet.css" />
+    <link rel="stylesheet" href="style_mobile.css" />
   </head>
   <body>
-    <header class="head">
+    <header class="gnb">
       <div class="head-inner">
         <a class="logo" href="/6-Sprint-Mission/index.html"
-          ><img src="img/Property 1=Variant3.png"
+          ><img src="img/Property 1=Variant3.png" alt="판다마켓 로고"
         /></a>
-          <a class="gnb-login" href="/6-Sprint-Mission/login.html">로그인</a>
+          <a class="gnb-login" href="./login/login.html">로그인</a>
       </div>
     </header>
 
@@ -24,19 +33,20 @@
       <div class="container">
         <div class="banner_text-box">
           <h1 class="banner_title">일상의 모든 물건을<br />거래해 보세요</h1>
-          <a href="/6-Sprint-Mission/items.html" class="banner_btn"
-            >구경하러 가기
+          <button class="banner_btn">
+            <a href="./items.html" class="banner_btn">구경하러 가기
           </a>
+          </button>
         </div>
       </div>
       <div class="banner-img">
-        <img class="topimg" src="img/Img_home_top.png" />
+        <img class="topimg" src="img/Img_home_top.png" alt="배너이미지" />
       </div>
     </div>
 
     <main>
       <section class="section container">
-        <div class="section_img-box"><img src="img/Img_home_01.png" /></div>
+        <div class="section_img-box"><img src="img/Img_home_01.png" alt="본문 사진 1" /></div>
         <div class="section_text-box">
           <span class="section_text-box__label">Hot items</span>
           <h2 class="section_text-box__title">인기 상품을 확인해보세요</span>
@@ -47,7 +57,7 @@
       </section>
 
       <section class="section container">
-        <div class="section_img-box"><img src="img/Img_home_02-1.png" /></div>
+        <div class="section_img-box"><img src="img/Img_home_02-1.png" alt="본문 사진 2"/></div>
         <div class="section_text-box">
           <span class="section_text-box__label">Search</span>
           <h2 class="section_text-box__title">구매를 원하는<br />상품을 검색하세요</span>
@@ -58,7 +68,7 @@
       </section>
 
       <section class="section container">
-        <div class="section_img-box"><img src="img/Img_home_03.png" /></div>
+        <div class="section_img-box"><img src="img/Img_home_03.png " alt="본문 사진 3" /></div>
         <div class="section_text-box">
           <span class="section_text-box__label">Register</span>
           <h2 class="section_text-box__title">판매를 원하는<br />상품을 등록하하세요</span>
@@ -71,37 +81,40 @@
 
     <div class="banner">
       <div class="container">
-        <div class="texts">
-          <h1>믿을 수 있는<br />판다마켓 중고거래</h1>
+        <div class="banner_text-box">
+          <h1 class="banner_title">믿을 수 있는<br />판다마켓 중고거래</h1>
         </div>
       </div>
-      <img class="bottomimg" src="img/Img_home_bottom.png" />
+      <img class="bottomimg" src="img/Img_home_bottom.png" alt="바닥 배너 이미지" />
     </div>
 
-    <footer>
+    <footer>  
       <div class="copyright">
         <p>@codeit -2023</p>
       </div>
 
       <div class="privacyfaq">
-        <a href="/6-Sprint-Mission/privacy.html">Privacy Policy</a>
-        <a href="/6-Sprint-Mission/faq.html">FAQ</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./faq.html">FAQ</a>
 
       </div>
 
       <div class="icon-box">
         <a href="https://facebook.com" target="_blank"
-          ><img src="img/ic_facebook.svg"
+          ><img src="img/ic_facebook.svg" alt="페이스북 아이콘"
         /></a>
         <a href="https://twitter.com/home" target="_blank"
-          ><img src="img/ic_twitter.svg"
+          ><img src="img/ic_twitter.svg" alt="트위터 아이콘"
         /></a>
         <a href="https://youtube.com" target="_blank"
-          ><img src="img/ic_youtube.svg"
+          ><img src="img/ic_youtube.svg" alt="유튜브 아이콘"
         /></a>
         <a href="https://instagram.com" target="_blank"
-          ><img src="img/ic_instagram.svg"
+          ><img src="img/ic_instagram.svg" alt="인스타그램 아이콘"
         /></a>
+      </div>
+      <div class="copyright_mobile">
+        <p>@codeit -2023</p>
       </div>
     </footer>
   </body>

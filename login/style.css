@@ -1,8 +1,10 @@
 .login-container {
   display: flex;
   flex-direction: column;
-  width: 640px;
+  max-width: 640px;
+  width: 100%;
   margin: 60px auto 0px;
+  position: relative;
 }
 .logo-box {
   margin: 0px auto 40px;
@@ -18,6 +20,7 @@
 .login-form p {
   font-size: 18px;
 }
+
 label {
   margin-bottom: 16px;
   font-weight: 700;
@@ -35,21 +38,32 @@ input:focus {
 }
 
 label,
-.fast-login > p,
+.social-login > p,
 .go-signuppage {
   color: #1f2937;
 }
 #email,
-#password,
-#name,
-button {
+.input,
+.login-button {
   margin-bottom: 24px;
   height: 56px;
   padding: 0px 24px;
   border-radius: 12px;
   border: none;
 }
-button {
+
+.toggle-password-btn {
+  background-color: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 425px;
+  right: 24px;
+  background-image: url('../img/Property\ 1=Default.png');
+  cursor: pointer;
+}
+.login-button {
   border-radius: 40px;
   background-color: #9ca3af;
   font-size: 20px;
@@ -57,34 +71,7 @@ button {
   color: #fff;
   cursor: pointer;
 }
-form {
-  position: relative;
-}
-.fa-regular {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  bottom: 116px;
-  right: 24px;
-  cursor: pointer;
-}
-#pass-eye1 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  bottom: 236px;
-  right: 24px;
-  cursor: pointer;
-}
-#pass-eye2 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  bottom: 116px;
-  right: 24px;
-  cursor: pointer;
-}
-.fast-login {
+.social-login {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 24px;
@@ -95,7 +82,7 @@ form {
   justify-content: space-between;
   padding: 18px 23px;
 }
-.fast-login img {
+.social-login img {
   width: 42px;
   height: 42px;
 }
@@ -110,4 +97,14 @@ form {
 }
 .go-signuppage img {
   margin-left: 16px;
+}
+@media (max-width: 767px) {
+  /* 모바일 */
+  .logo-box > img {
+    width: 198px;
+    height: 66px;
+  }
+  .toggle-password-btn {
+    top: 360px;
+  }
 }

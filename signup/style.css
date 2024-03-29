@@ -1,0 +1,132 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  width: 100%;
+  margin: 60px auto 0px;
+  position: relative;
+}
+.logo-box {
+  margin: 0px auto 40px;
+}
+.logo-box > img {
+  width: 396px;
+  height: 132px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.login-form p {
+  font-size: 18px;
+}
+label {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+}
+input {
+  font-weight: 400;
+  font-size: 16px;
+  color: #9ca3af;
+  background-color: #f3f4f6;
+  border: none;
+}
+input:focus {
+  outline: solid 1px #3182f6;
+}
+
+label,
+.social-login > p,
+.go-signuppage {
+  color: #1f2937;
+}
+#email,
+.input,
+.login-button,
+#name {
+  margin-bottom: 24px;
+  height: 56px;
+  padding: 0px 24px;
+  border-radius: 12px;
+  border: none;
+}
+.toggle-password-btn1 {
+  background-color: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 580px;
+  right: 24px;
+  background-image: url('../img/Property\ 1=Default.png');
+  cursor: pointer;
+}
+
+.toggle-password-btn2 {
+  background-color: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 735px;
+  right: 24px;
+  background-image: url('../img/Property\ 1=Default.png');
+  cursor: pointer;
+}
+
+.signup-button {
+  margin-bottom: 24px;
+  height: 56px;
+  padding: 0px 24px;
+  border-radius: 12px;
+  border: none;
+  border-radius: 40px;
+  background-color: #9ca3af;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-login {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 24px;
+  background-color: #e6f2ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 23px;
+}
+.social-login img {
+  width: 42px;
+  height: 42px;
+}
+.go-signinpage {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+.go-signinpage a {
+  text-decoration: underline;
+  color: #3182f6;
+}
+.go-signinpage img {
+  margin-left: 16px;
+}
+@media (max-width: 767px) {
+  /* 모바일 */
+  .logo-box > img {
+    width: 198px;
+    height: 66px;
+  }
+  .toggle-password-btn1 {
+    top: 515px;
+  }
+
+  .toggle-password-btn2 {
+    top: 670px;
+  }
+}

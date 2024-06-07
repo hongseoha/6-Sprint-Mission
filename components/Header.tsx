@@ -7,12 +7,12 @@ const Header = () => {
     <header>
       <div className={styles.container}>
         <div className={styles.leftbox}>
-        <Link href="#">
+        <Link href="/">
           <div className={styles.logo}>
             <img src='/logo.png' alt='로고' />
           </div>
         </Link>
-        <Link href="#">
+        <Link href="/boards">
           <div className={styles.nav}>
             자유게시판
           </div>

@@ -10,6 +10,7 @@
   padding: 10px 200px;
   justify-content: space-between;
     .leftbox{
+      margin-top: 10px;
       display: flex;
       .logo{
         padding: 10px;

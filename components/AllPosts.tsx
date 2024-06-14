@@ -1,9 +1,8 @@
-import Image from "next/image";
-import React from "react";
-import { format } from "date-fns";
-import styles from "./AllPosts.module.css";
-import {PostsProps} from "@/type/type";
-
+import Image from 'next/image';
+import React from 'react';
+import { format } from 'date-fns';
+import styles from './AllPosts.module.css';
+import { PostsProps } from '@/type/type';
 
 function AllPosts({ post }: PostsProps) {
   return (
@@ -35,7 +34,7 @@ function AllPosts({ post }: PostsProps) {
             />
             <div className={styles.nickname}>{post.writer.nickname}</div>
             <div className={styles.CreatedAt}>
-              {format(post.createdAt, "yyyy. MM. dd")}
+              {format(post.createdAt, 'yyyy. MM. dd')}
             </div>
           </div>
           <div className={styles.HeartGroup}>

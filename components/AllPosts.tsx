@@ -8,10 +8,10 @@ function AllPosts({ post }: PostsProps) {
   return (
     <>
       <div className={styles.Container}>
-        <div className={styles.InnerContainer}>
+        <div className={styles.Content}>
           <p className={styles.Content}>{post.content}</p>
           <div>
-            {post.image ? (
+          {post.image && (
               <Image
                 src={post.image}
                 width={72}
@@ -19,8 +19,6 @@ function AllPosts({ post }: PostsProps) {
                 alt="이미지"
                 className={styles.Img}
               />
-            ) : (
-              <></>
             )}
           </div>
         </div>

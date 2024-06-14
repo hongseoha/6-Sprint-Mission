@@ -9,20 +9,18 @@ function BestPosts({ post }: BestPostsProps) {
     <>
     <div key={post.id} className={styles.BestContainer}>
       <div className={styles.InnerContainer}>
-        <Image src="/Img/badge.svg" width={102} height={30} alt="badge" />
+        <Image src="/Img/badge.svg" width={102} height={30} alt="" />
         <div className={styles.Content}>
           <p className={styles.Text}>{post.content}</p>
-          {post.image ? (
-            <Image
-              src={post.image}
-              width={72}
-              height={72}
-              alt="이미지"
-              className={styles.PostImgs}
-            />
-          ) : (
-            <></>
-          )}
+          {post.image && (
+              <Image
+                src={post.image}
+                width={72}
+                height={72}
+                alt="이미지"
+                className={styles.Img}
+              />
+            )}
         </div>
         <div className={styles.InfoContent}>
           <div className={styles.Info}>

@@ -21,9 +21,7 @@ export default function Home() {
   async function getPosts() {
     try {
       const res = await instance.get(`/articles`);
-      console.log('API 전체 응답:', res); // 전체 응답 데이터 출력
       const nextPosts = res.data.list;
-      console.log('API 응답 데이터:', nextPosts);
       setPosts(nextPosts);
     } catch (error) {
       console.error('Error fetching posts:', error);
